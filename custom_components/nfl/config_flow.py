@@ -1,4 +1,4 @@
-"""Adds config flow for NFL."""
+"""Adds config flow for NBA."""
 from __future__ import annotations
 
 import logging
@@ -50,38 +50,35 @@ async def _get_team_list(self):
     """Return list of team acronyms"""
 
     team_list = [
-        'ARI',
         'ATL',
-        'BAL',
-        'BUF',
-        'CAR',
+        'BKN',
+        'BOS',
+        'CHA',
         'CHI',
-        'CIN',
-        'CLE',
         'DAL',
         'DEN',
         'DET',
-        'GB',
+        'GS',
         'HOU',
         'IND',
-        'JAX',
-        'KC',
         'LAC',
-        'LAR',
-        'LV',
+        'LAL',
+        'MEM',
         'MIA',
+        'MIL',
         'MIN',
-        'NE',
         'NO',
-        'NYG',
-        'NYJ',
+        'NYK',
+        'OKC',
+        'ORL',
         'PHI',
-        'PIT',
-        'SEA',
-        'SF',
-        'TB',
-        'TEN',
-        'WSH'
+        'PHO',
+        'POR',
+        'SAC',
+        'SA',
+        'TOR',
+        'UTAH',
+        'WAS'
     ]
     
     _LOGGER.debug("Team list: %s", team_list)
