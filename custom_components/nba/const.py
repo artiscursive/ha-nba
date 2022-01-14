@@ -7,14 +7,14 @@ CONF_TIMEOUT = "timeout"
 CONF_TEAM_ID = "team_id"
 
 # Defaults
-DEFAULT_ICON = "mdi:football"
+DEFAULT_ICON = "mdi:basketball"
 DEFAULT_NAME = "NBA"
 DEFAULT_TIMEOUT = 120
 
 # Misc
 TEAM_ID = ""
 VERSION = "0.1"
-ISSUE_URL = "https://github.com/zacs/ha_nfl"
+ISSUE_URL = "https://github.com/artiscursive/ha-nba"
 DOMAIN = "nba"
 PLATFORM = "sensor"
 ATTRIBUTION = "Data provided by ESPN"
