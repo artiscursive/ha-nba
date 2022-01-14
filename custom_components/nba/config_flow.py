@@ -55,6 +55,7 @@ async def _get_team_list(self):
         'BOS',
         'CHA',
         'CHI',
+        'CLE',
         'DAL',
         'DEN',
         'DET',
