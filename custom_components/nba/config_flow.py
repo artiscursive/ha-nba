@@ -87,7 +87,7 @@ async def _get_team_list(self):
 
 @config_entries.HANDLERS.register(DOMAIN)
 class NFLScoresFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
-    """Config flow for NFL."""
+    """Config flow for NBA."""
 
     VERSION = 2
     CONNECTION_CLASS = config_entries.CONN_CLASS_CLOUD_POLL
@@ -139,7 +139,7 @@ class NFLScoresFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
 
 
 class NFLScoresOptionsFlow(config_entries.OptionsFlow):
-    """Options flow for NFL."""
+    """Options flow for NBA."""
 
     def __init__(self, config_entry):
         """Initialize."""
