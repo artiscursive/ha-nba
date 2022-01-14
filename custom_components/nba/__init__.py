@@ -1,4 +1,4 @@
-""" NFL Team Status """
+""" NBA Team Status """
 import logging
 from datetime import timedelta
 import arrow
