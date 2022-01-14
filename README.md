@@ -1,8 +1,8 @@
-# NFL game data in Home Assistant
+# NBA game data in Home Assistant
 
-This integration fetches data for an NFL team's current/future game, and creates a sensor with attributes for the details of the game. 
+This integration fetches data for an NBA team's current/future game, and creates a sensor with attributes for the details of the game. 
 
-The integration is a shameless fork of the excellent [NWS alerts](https://github.com/finity69x2/nws_alerts) custom component by @finity69x2.Thank you for the starting place!
+The integration is a shameless fork of the excellent [NWS alerts](https://github.com/finity69x2/nws_alerts) custom component by @finity69x2 + @zacs NFL-HA(https://github.com/zacs/ha-nfl) hank you for the starting place!
 
 ## Sensor Data
 
@@ -57,7 +57,7 @@ The attributes available will change based on the sensor's state, a small number
 
 ### Manually
 
-Clone or download this repository and copy the "nfl" directory to your "custom_components" directory in your config directory
+Clone or download this repository and copy the "nba" directory to your "custom_components" directory in your config directory
 
 ```<config directory>/custom_components/nfl/...```
   
@@ -70,19 +70,19 @@ Clone or download this repository and copy the "nfl" directory to your "custom_c
   
 ## Configuration
 
-You'll need to know your team ID, which is a 2- or 3-letter acronym (eg. "SEA" for Seattle or "NE" for New England). You can find yours at https://espn.com/nfl in the top scores UI. 
+You'll need to know your team ID, which is a 2- or 3-letter acronym (eg. "CHA" for Charlotte or "LAL" for Los Angeles Lakers). You can find yours at https://espn.com/nba in the top scores UI. 
 
 ### Via the "Configuration->Integrations" section of the Home Assistant UI
 
-Look for the integration labeled "NFL" and enter your team's acronym in the UI prompt. You can also enter a friendly name. If you keep the default, your sensor will be `sensor.nfl`, otherwise it will be `sensor.friendly_name_you_picked`. 
+Look for the integration labeled "NBA" and enter your team's acronym in the UI prompt. You can also enter a friendly name. If you keep the default, your sensor will be `sensor.nfl`, otherwise it will be `sensor.friendly_name_you_picked`. 
 
 ### Manually in your `configuration.yaml` file
 
 To create a sensor instance add the following configuration to your sensor definitions using the team_id found above:
 
 ```
-- platform: nfl
-  team_id: 'SEA'
+- platform: nba
+  team_id: 'CHA'
 ```
 
 After you restart Home Assistant then you should have a new sensor called `sensor.nfl` in your system.
@@ -90,9 +90,9 @@ After you restart Home Assistant then you should have a new sensor called `senso
 You can overide the sensor default name (`sensor.nfl`) to one of your choosing by setting the `name` option:
 
 ```
-- platform: nfl
-  team_id: 'SEA'
-  name: Seahawks
+- platform: nba
+  team_id: 'CHA'
+  name: Hornets
 ```
 
-Using the configuration example above the sensor will then be called "sensor.seahawks".
+Using the configuration example above the sensor will then be called "sensor.hornets".
